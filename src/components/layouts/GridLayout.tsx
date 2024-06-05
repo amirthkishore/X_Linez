@@ -3,6 +3,7 @@ import { Component } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { Header } from '../page/partials/Header';
 import Content from './Content';
+import { Footer } from '../page/partials/Footer';
 
 class GridLayout extends Component {
     render() {
@@ -20,6 +21,7 @@ class GridLayout extends Component {
                         <ToastContainer />*/}
                     </div>
                 </div>
+                <Footer />
             </div>
 
         );

@@ -13,14 +13,72 @@ export let Header = () => {
 		//console.log(pathname)
 		//setPath(pathname)
 	}, [])
-	
+
 
 	//console.log(AuthManager)
 
 	return (
-		<header className="app-header fixed-top">
 
-			{/* header  */}
+		<>
+
+
+
+			<div className="container">
+				<div className="w-50">
+					<a href="" className="navbar-brand d-flex align-items-center bg-transparent">
+						<h1 className="text-center">
+							<img
+								className="img-fluid me-3 Logo_theX"
+								src="../assets/images/txllogo.png"
+								alt="thexlinez logistics"
+							/>
+						</h1>
+					</a>
+				</div>
+
+				<button
+					className="navbar-toggler ml-auto"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse"
+					aria-controls="navbarCollapse"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+					style={{ color:"#a40000" }}
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+
+				<div className="collapse navbar-collapse Navcss" id="navbarCollapse">
+					<div className="navbar-nav mx-auto pe-4 py-3 py-lg-0">
+
+						<a className="nav-item nav-link"> Home </a>
+						<a className="nav-item nav-link"> About Us </a>
+						<a className="nav-item nav-link"> Our Services </a>
+						<a className="nav-item nav-link"> Contact Us </a>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{/*<header className="app-header fixed-top">
+
+			{/* header  * /}
 			<div className="app-header-inner">
 				<div className="container-fluid py-2">
 					<div className="app-header-content">
@@ -94,14 +152,14 @@ export let Header = () => {
 
 												<div className="text-center">
 													{/* <h4> Test Kishore </h4> 
-													<label>{AuthManager.getLocalUser().email}</label> <br /> */}
+													<label>{AuthManager.getLocalUser().email}</label> <br /> * /}
 													<p>Company Name : My shop </p>
 													
 
 													{/* {(this.state.result.isActivated) ? "ok" : "not ok" } 
  
 
-													<Link type="button" className="btn btn-outline-dark" to="/b/billing/subscription/"> <b>  <SubtoUpgrade /> </b> </Link>*/}
+													<Link type="button" className="btn btn-outline-dark" to="/b/billing/subscription/"> <b>  <SubtoUpgrade /> </b> </Link>* /}
 
 													<br /> <br />
 													<Link className="btn btn-danger" to="/logout/">Logout</Link>
@@ -120,7 +178,7 @@ export let Header = () => {
 											</Link>
 										</li> */}
 
-										{/* <li>
+			{/* <li>
 											<li className="dropdown-item">
 												HELP DOCMENTS
 											</li>
@@ -141,7 +199,7 @@ export let Header = () => {
 												<img src="/assets/images/Contact.png" /> &nbsp; Contact Us
 											</li>
 											
-										</li> */}
+										</li> * /}
 									</ul>
 
 								</div>
@@ -153,7 +211,9 @@ export let Header = () => {
 				</div>
 			</div>
 
-			{/* <SideBar2Fn /> */}
-		</header>
+			{/* <SideBar2Fn /> * /}
+		</header> */}
+
+		</>
 	)
 }
