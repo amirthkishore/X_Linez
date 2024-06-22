@@ -10,7 +10,7 @@ function App() {
 
           <Route path="/" element={<Navigate to="/home" />} />
 
-          <Route path="/home" element={<GridLayout />} />
+          <Route path="/*" element={<GridLayout />} />
 
           {/* 404 bugfix: redirect to home page */}
           <Route path="*" element={<Navigate to="/" />} />
