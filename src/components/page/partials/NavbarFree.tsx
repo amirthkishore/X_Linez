@@ -7,7 +7,7 @@ export class NavbarFree extends Component {
             <div className="row nav-free shadow">
                 <div className="col">
                     <Link to="/acc/login">
-                        <img className="logo" src="/assets/img/logo/web-logo.png" />
+                        <img className="logo" src="\public\assets\images\txllogo.png" />
                     </Link>
                 </div>
             </div>

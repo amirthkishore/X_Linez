@@ -6,15 +6,17 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<GridLayout />} />
+          <Route path="/" element={<Navigate to="/home" />} />
 
-        {/* 404 bugfix: redirect to home page */}
-        <Route path="*"element={<Navigate to="/" />}  />
+          <Route path="/*" element={<GridLayout />} />
 
-      </Routes>
-    </BrowserRouter>
+          {/* 404 bugfix: redirect to home page */}
+          <Route path="*" element={<Navigate to="/" />} />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
